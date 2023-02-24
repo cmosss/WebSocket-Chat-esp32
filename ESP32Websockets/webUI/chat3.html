@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--meta charset="UTF-8"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WebSocket Chat Client</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="GUI_styles.css"> 
+  
+  </head>
+  <body > 
+     <div class="container2">
+     <div class="col-1">
+          <!--body onload="startGame()"></body-->
+          <canvas id="myCanvas" width="1000" height="600">
+            <script id="wall_color"src="GUI_script2.js"></script> 
+          </canvas>
+              <div style="text-align:center;width:480px;">
+                <button onclick=rotateOnce()>Rotate once</button>
+                <button onclick=moveCharacter()>UP</button>
+              </div>      
+      </div>
+      <div class="col-2">   
+              <div id="column_message">
+              <input type="text" id="ip-input" value="192.168.43.110">
+              <div id="chat-box"> </div>
+                  <div id="message-box">  <!--ทำให้  input  กับ  button อยู่ด้วยกัน-->
+                     <input type="text" id="message">
+                     <button onclick="send()">Send</button>
+                  </div>   
+             </div>
+      </div>
+    </div>
+    <script src="WebSocket.js"></script>
+  </body>
+</html>

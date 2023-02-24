@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #chat-box {
+    width: 280px;
+    height: 600px;
+    border: 1px solid black;
+    overflow: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  #message-box {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    
+  }
+  
+  #message {
+    flex: 1;
+    margin-right: 5px;
+  }
+  #ip-input {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  button {
+    width: 80px;
+  }
+
+  #column_message
+  {
+   margin: auto;
+  }
+
+  .container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* กำหนดให้แบ่งเป็น 2 Column ที่ขนมีาดเท่ากัน */
+    grid-gap: 20px; /* กำหนดระยะห่างระหว่าง Column */
+    justify-items: center; /* ทำให้ Column อยู่ตรงกลางตามแนวนอน */
+    align-items: center; /* ทำให้ Column อยู่ตรงกลางตามแนวตั้ง */
+  }
+  
+  .col-1 {
+    padding: 20px;
+    background-color: #066173;
+  }
+  
+  .col-2 {
+    padding: 20px;
+    background-color: #e9fddb;
+  }

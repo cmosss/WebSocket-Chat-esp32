@@ -1,0 +1,29 @@
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    display: block;
+    width: 1000px; /* กำหนดความกว้าง canvas ได้ตามต้องการ */
+    height: 600px; /* กำหนดความสูง */ 
+    margin:auto;
+
+}
+#myCanvas {
+    border: 3px solid black;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+  }
+  
+  .button-container button {
+    margin: 0 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  #wall_color
+  {
+   color: #2d10d4;
+  }
